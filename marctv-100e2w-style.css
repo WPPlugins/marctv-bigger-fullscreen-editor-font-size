@@ -1,0 +1,30 @@
+html.wp-fullscreen #tinymce,
+html.wp-fullscreen body#tinymce,
+html .wp-fullscreen-active textarea.wp-editor-area {
+    font-size: 120%;
+    line-height: 1.4em;
+}
+
+html.wp-fullscreen #tinymce img:not(.wp-more-tag),
+html.wp-fullscreen body#tinymce img:not(.wp-more-tag),
+html .wp-fullscreen-active textarea.wp-editor-area img:not(.wp-more-tag) {
+    height: auto;
+    width: 100%;
+}
+
+/* Sorry, this part is really ugly. I don't really know another way to overwrite the inline styles. */
+html.wp-fullscreen #tinymce .wp-caption,
+html.wp-fullscreen body#tinymce .wp-caption,
+html .wp-fullscreen-active textarea.wp-editor-area .wp-caption {
+    width: 100% ! important;
+}
+
+html.wp-fullscreen #tinymce .wp-caption.alignright, html.wp-fullscreen #tinymce .wp-caption.alignleft,
+html.wp-fullscreen body#tinymce .wp-caption.alignright, html.wp-fullscreen body#tinymce .wp-caption.alignleft,
+html .wp-fullscreen-active textarea.wp-editor-area .wp-caption.alignright,html .wp-fullscreen-active textarea.wp-editor-area .wp-caption.alignleft {
+    width: 33% ! important;
+}
+
+html .wp-fullscreen-active .wp-fullscreen-title {
+    font-size: 200%;
+}
